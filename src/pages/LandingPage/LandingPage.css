@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/landingImg/header-image.png);
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10px 8%;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    color: #e5e5e5;
+    font-size: 14px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 90%, transparent);
+    z-index: 1;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+#nav {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn #btn {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+.btn img {
+    width: 10px;
+    margin: 10px;
+}
+
+.en {
+    background-color: transparent;
+    display: inline-flex;
+    border: 2px solid white;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.box1 {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.box1 p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.sec1 h1 {
+    font-size: 3rem;
+    line-height: 70px;
+    max-width: 650px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.sec1 h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sec2 {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.sec1 p {
+    margin-top: 30px;
+}
+
+.sec2 input {
+    width: 400px;
+    padding: 20px 30px;
+    flex: 2;
+    border: 2px solid rgb(68, 67, 67);
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.sec2 #getStart {
+    flex: 1;
+    background-color: rgb(198, 10, 10);
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 60px;
+    width: 200px;
+}
+
+.sec10 button {
+    background-color: rgb(198, 10, 10);
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 60px;
+    width: 200px;
+}
+
+hr {
+    height: 10px;
+    background: rgb(32, 29, 29);
+    border: 0;
+    width: 100%;
+}
+
+.box {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.col-text {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.col-img {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.col-img img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.box h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.col-text p {
+    font-size: 24px;
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 3px;
+}
+
+.sec10 {
+    margin: 10px auto;
+    text-align: center;
+    width: 70%;
+}
+
+/* FAQ Section */
+.accordion {
+    background-color: #383737;
+    color: #f7f4f4;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.q1 {
+    padding: 10px 15px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.q1.active {
+    display: block;
+}
+
+.q1 p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.5rem;
+    margin: 10px;
+}
+
+#emailsign {
+    max-width: 600px;
+}
+
+/* Footer Links */
+.foot {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.foot .col {
+    flex-grow: 1;
+    flex-basis: 25%;
+    margin-bottom: 20px;
+}
+
+.foot .col a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.foot .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.foot li {
+    list-style: none;
+}
+
+.call {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.copy {
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #777;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .logo {
+        width: 120px;
+    }
+
+    .btn #btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    button.en {
+        padding: 8px 25px; 
+        font-size: 16px; 
+      }
+    
+      .down-icon {
+        width: 20px; 
+      }
+
+    .sec2 input {
+        width: 350px;
+    }
+
+    .sec2 #getStart {
+        padding: 15px 8px;
+        font-size: 16px;
+    }
+
+    .sec1 h1 {
+        font-size: 2.5rem;
+        line-height: 60px;
+    }
+
+    .box h2 {
+        font-size: 35px;
+    }
+
+    .box p {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .row {
+        padding: 30px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px 4%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .btn #btn {
+        padding: 7px 14px;
+        font-size: 11px;
+    }
+
+    .sec2 input {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .sec2 #getStart {
+        padding: 10px 8px;
+        font-size: 14px;
+        height: 50px;
+        width: 150px;
+    }
+
+    .sec1 h1 {
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .col-text, .col-img {
+        flex-basis: 100%;
+    }
+
+    .box h2 {
+        font-size: 30px;
+    }
+
+    .box p {
+        font-size: 18px;
+    }
+
+    .row:nth-child(2), .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .faq h2 {
+        font-size: 18px;
+    }
+
+    .accordion {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .sec10 button {
+        width:150px;
+        height: 40px;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px 2%;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .btn #btn {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    button.en {
+        padding: 6px 15px; 
+        font-size: 14px; 
+      }
+    
+      .down-icon {
+        width: 4px; 
+        height:2px;
+      }
+
+    .sec2 input {
+        width: 250px;
+        padding: 10px;
+    }
+
+    .sec2 #getStart {
+        padding: 10px 5px;
+        font-size: 12px;
+        height: 40px;
+        width: 150px;
+    }
+
+    .sec1 h1 {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    .box h2 {
+        font-size: 25px;
+    }
+
+    .box p {
+        font-size: 16px;
+    }
+
+    .row {
+        padding: 20px 0;
+    }
+
+    .accordion {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

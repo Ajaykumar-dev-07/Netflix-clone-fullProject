@@ -1,0 +1,149 @@
+.login{
+    height:100vh;
+    background-image: linear-gradient(#0000007e,#0000007e),url(/background_banner.jpg);
+    padding: 20px 8%;
+}
+.login-logo{
+    width:150px;
+    margin-bottom: 30px;
+}
+.login-form{
+    width:100%;
+    max-width: 420px;
+    background-color: rgba(0,0,0,0.75);
+    padding: 50px;
+    margin: auto;
+    border-radius: 4px;
+}
+.login-form h1{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.login-form input{
+    width:100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    margin-bottom: 20px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.login-form input::placeholder{
+    color: #999;
+    font-size: 15px;
+}
+.login-form button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #e50914;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Login Help */
+
+.form-help{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color:#b3b3b3;
+}
+.remember{
+    
+    display: flex;
+    align-items:center;
+    gap:5px;
+}
+.remember input[type="checkbox"]{
+    accent-color: #373636;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    margin: 0;
+    
+}
+
+.form-help a{
+    color:#b3b3b3;
+    text-decoration: none;
+}
+.form-help a:hover{
+    text-decoration: underline;
+}
+.login-form p{
+    margin-top: 20px;
+}
+.form-switch{
+    margin-top: 40px;
+    color:#737373
+}
+.form-switch span{
+    margin-left:6px;
+    cursor: pointer;
+    color:white;
+    font-weight: 500;
+}
+.form-switch span:hover{
+    text-decoration: underline;
+}
+.form-switch p{
+    font-size: 16px;
+}
+.recaptcha p{
+    font-size: 12px;
+    margin-top: 30px;
+    
+    color:#737373
+}
+.recaptcha p a{
+    color:#2f15af;
+    text-decoration: none;
+    cursor: pointer;
+}
+.recaptcha p a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+
+    .login{
+        padding: 20px;
+    }
+
+    .login-logo{
+        width:100px;    
+    }
+
+    .login-form{
+        padding: 20px;
+    }
+
+    .login-form h1{
+        font-size: 24px;
+    }
+
+    .login-form p{
+        font-size: 14px;
+    }
+
+    .login-form input{
+        font-size: 14px;
+    }
+
+    .login-form button{
+        font-size: 14px;
+    }
+    
+}
